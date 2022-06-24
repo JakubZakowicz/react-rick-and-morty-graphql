@@ -12,7 +12,7 @@ import { statuses } from '../utils/statuses';
 
 const Characters: React.FC = () => {
   const pageParam = queryString.parse(window.location.search).page;
-  const [page, setPage] = useState<number>(Number(pageParam) ?? 1);
+  const [page, setPage] = useState<number>(Number(pageParam ?? 1));
   const { loading, data } = useQuery(GET_CHARACTERS, { variables: { page } });
   const navigate = useNavigate();
 

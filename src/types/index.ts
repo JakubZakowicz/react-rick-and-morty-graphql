@@ -1,3 +1,5 @@
+import { MouseEventHandler, ReactNode } from "react";
+
 export type DetailsButtonProps = {
   name: string;
   to: string;
@@ -22,4 +24,17 @@ export type Character = {
 
 export type Statuses = {
   [key: string]: string;
+};
+
+export type MenuLink = {
+  name: string;
+  to: string;
+};
+
+export type LayoutProps = {
+  children: ReactNode;
+};
+
+export type MenuBarProps = {
+  onOpen: MouseEventHandler<HTMLButtonElement>;
 };

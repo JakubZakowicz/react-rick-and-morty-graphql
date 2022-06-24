@@ -1,13 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ChakraProvider } from '@chakra-ui/react';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-} from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import App from './App';
-import theme from './@chakra-ui/theme/theme'
+import theme from './@chakra-ui/theme/theme';
 
 const client = new ApolloClient({
   uri: 'https://rickandmortyapi.com/graphql',
