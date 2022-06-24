@@ -45,3 +45,16 @@ export const GET_CHARACTER = gql`
     }
   }
 `;
+
+export const GET_EPISODES = gql`
+  query getEpisodes($season: String!) {
+    episodes(filter: { episode: $season }) {
+      results {
+        id
+        name
+        air_date
+        episode
+      }
+    }
+  }
+`;

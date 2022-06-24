@@ -25,7 +25,7 @@ export type Character = {
 export type Episode = {
   id: number;
   name: string;
-  air_dat: string;
+  air_date: string;
   episode: string;
   characters: Character;
 };
