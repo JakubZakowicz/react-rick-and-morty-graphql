@@ -72,7 +72,7 @@ const Characters: React.FC = () => {
               <Spacer />
               <DetailsButton
                 name="See more details"
-                to={`/characters/${character.id}`}
+                to={`/character/${character.id}`}
                 width="172px"
               />
             </Flex>

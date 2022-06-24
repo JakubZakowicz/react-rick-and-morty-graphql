@@ -1,4 +1,4 @@
-import { MouseEventHandler, ReactNode } from "react";
+import { MouseEventHandler, ReactNode } from 'react';
 
 export type DetailsButtonProps = {
   name: string;
@@ -13,14 +13,22 @@ export type PaginationProps = {
 };
 
 export type Character = {
-  id: number
-  name: string
-  status: string
-  species: string
-  type: string
-  gender: string
-  image: string
-}
+  id: number;
+  name: string;
+  status: string;
+  species: string;
+  type: string;
+  gender: string;
+  image: string;
+};
+
+export type Episode = {
+  id: number;
+  name: string;
+  air_dat: string;
+  episode: string;
+  characters: Character;
+};
 
 export type Statuses = {
   [key: string]: string;
@@ -37,4 +45,12 @@ export type LayoutProps = {
 
 export type MenuBarProps = {
   onOpen: MouseEventHandler<HTMLButtonElement>;
+};
+
+export type StyledLinkProps = {
+  name?: string;
+  to: string;
+  fontSize?: string;
+  children?: JSX.Element;
+  isSecondary?: boolean;
 };
