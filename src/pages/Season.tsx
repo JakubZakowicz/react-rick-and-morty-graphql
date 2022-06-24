@@ -9,7 +9,7 @@ import DetailsButton from '../components/DetailsButton';
 import { GET_EPISODES } from '../queries/index';
 
 const Season: React.FC = () => {
-  const { season } = useParams()
+  const { season } = useParams();
   const { data, loading } = useQuery(GET_EPISODES, {
     variables: { season: `S0${season}` },
   });
@@ -40,7 +40,7 @@ const Season: React.FC = () => {
                 <Spacer />
                 <Text>{episode.air_date}</Text>
                 <Spacer />
-                <DetailsButton name="See More" to={`/episodes/${episode.id}`} />
+                <DetailsButton name="See More" to={`/episode/${episode.id}`} />
               </Flex>
             </Box>
           ))}

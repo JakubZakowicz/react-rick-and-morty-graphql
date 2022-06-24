@@ -101,7 +101,7 @@ const Character: React.FC = () => {
                   character.episode.map(
                     (episode: Episode, index: number) =>
                       index !== 0 && (
-                        <StyledLink to={`/episodes/${episode.id}`}>
+                        <StyledLink to={`/episode/${episode.id}`}>
                           <Flex mt={2} w={300} align="center">
                             <Text fontSize="xl">{episode.name}</Text>
                             <Spacer />
