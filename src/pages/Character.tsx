@@ -74,7 +74,7 @@ const Character: React.FC = () => {
               ) : (
                 <StyledLink
                   name={character.origin.name}
-                  to={`/locations/${character.origin.id}`}
+                  to={`/location/${character.origin.id}`}
                   fontSize="xl"
                 />
               )}
@@ -83,14 +83,14 @@ const Character: React.FC = () => {
               <Text color="lightgray">Last known location:</Text>
               <StyledLink
                 name={character.location.name}
-                to={`/locations/${character.location.id}`}
+                to={`/location/${character.location.id}`}
                 fontSize="xl"
               />
             </Box>
             <Box mt={5}>
               <Text color="lightgray">Appearances:</Text>
               <Box position="relative">
-                <StyledLink to={`/episodes/${character.episode[0].id}`}>
+                <StyledLink to={`/episode/${character.episode[0].id}`}>
                   <Flex w={300} align="center">
                     <Text fontSize="xl">{character.episode[0].name}</Text>
                     <Spacer />
