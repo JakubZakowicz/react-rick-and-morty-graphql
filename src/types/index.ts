@@ -30,6 +30,14 @@ export type Episode = {
   characters: Character;
 };
 
+export type Location = {
+  id: number
+  name: string
+  type: string
+  dimension: string
+  residents: Character
+}
+
 export type Statuses = {
   [key: string]: string;
 };

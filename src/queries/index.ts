@@ -73,3 +73,17 @@ export const GET_EPISODE = gql`
     }
   }
 `;
+
+export const GET_LOCATIONS = gql`
+  query getLocations($page: Int, $name: String) {
+    locations(page: $page, filter: { name: $name }) {
+      info {
+        next
+      }
+      results {
+        id
+        name
+      }
+    }
+  }
+`;
