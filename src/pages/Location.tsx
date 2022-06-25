@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/client';
 import { Box, Container, Text } from '@chakra-ui/react';
 import BackButton from '../components/BackButton';
 import Loader from '../components/Loader';
+import Seo from '../components/Seo';
 import StyledLink from '../components/StyledLink';
 import { GET_LOCATION } from '../queries/index';
 import { Character } from '../types';
@@ -18,6 +19,7 @@ const Location: React.FC = () => {
 
   return (
     <Container>
+      <Seo title={`Location | ${location.name}`} />
       <Box
         mt="10"
         bg="gray"

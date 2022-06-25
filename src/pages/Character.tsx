@@ -4,8 +4,9 @@ import { ChevronUpIcon, ChevronDownIcon } from '@chakra-ui/icons';
 import { useQuery } from '@apollo/client';
 import Loader from '../components/Loader';
 import BackButton from '../components/BackButton';
-import { statuses } from '../utils/statuses';
+import Seo from '../components/Seo';
 import StyledLink from '../components/StyledLink';
+import { statuses } from '../utils/statuses';
 import { GET_CHARACTER } from '../queries/index';
 import { useParams } from 'react-router-dom';
 import { Episode } from '../types';
@@ -23,6 +24,7 @@ const Character: React.FC = () => {
 
   return (
     <Container centerContent>
+      <Seo title={`Character | ${character.name}`} />
       <Box
         mt={20}
         p={{ base: '75px 0 50px 0', xl: '20' }}

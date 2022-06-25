@@ -62,3 +62,7 @@ export type StyledLinkProps = {
   children?: JSX.Element;
   isSecondary?: boolean;
 };
+
+export type SeoProps = {
+  title: string;
+}

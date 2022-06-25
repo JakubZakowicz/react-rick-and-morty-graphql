@@ -5,6 +5,7 @@ import { Box, Container, Flex, Image, Spacer, Text } from '@chakra-ui/react';
 import queryString from 'query-string';
 import Pagination from '../components/Pagination';
 import Loader from '../components/Loader';
+import Seo from '../components/Seo';
 import DetailsButton from '../components/DetailsButton';
 import { GET_CHARACTERS } from '../queries';
 import { Character } from '../types';
@@ -28,6 +29,7 @@ const Characters: React.FC = () => {
 
   return (
     <Container>
+      <Seo title={`Characters | page ${page}`} />
       {characters?.results.map((character: Character) => (
         <Box
           key={character.id}

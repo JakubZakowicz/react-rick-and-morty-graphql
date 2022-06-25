@@ -16,6 +16,7 @@ import { GET_LOCATIONS } from '../queries';
 import Loader from '../components/Loader';
 import DetailsButton from '../components/DetailsButton';
 import { Location } from '../types';
+import Seo from '../components/Seo';
 
 const Locations: React.FC = () => {
   const [search, setSearch] = useState<string>('');
@@ -46,6 +47,7 @@ const Locations: React.FC = () => {
 
   return (
     <Container mt="10">
+      <Seo title="Locations" />
       <InputGroup w={{ base: 'auto', lg: '741px' }}>
         <InputLeftElement zIndex="1">
           <SearchIcon color="gray.300" w="20px" h="20px" ml="4px" mt="5px" />
@@ -61,7 +63,6 @@ const Locations: React.FC = () => {
           onChange={handleChange}
         />
       </InputGroup>
-
       {loading ? (
         <Loader />
       ) : (

@@ -7,6 +7,7 @@ import Loader from '../components/Loader';
 import StyledLink from '../components/StyledLink';
 import { GET_EPISODE } from '../queries/index';
 import { Character } from '../types';
+import Seo from '../components/Seo';
 
 const Episode: React.FC = () => {
   const { id } = useParams()
@@ -21,6 +22,7 @@ const Episode: React.FC = () => {
 
   return (
     <Container>
+      <Seo title={`Episode | ${episode.name}`} />
       <Box
         mt="10"
         bg="gray"

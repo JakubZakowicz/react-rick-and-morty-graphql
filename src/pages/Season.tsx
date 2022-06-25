@@ -7,6 +7,7 @@ import Loader from '../components/Loader';
 import Seasons from '../components/Seasons';
 import DetailsButton from '../components/DetailsButton';
 import { GET_EPISODES } from '../queries/index';
+import Seo from '../components/Seo';
 
 const Season: React.FC = () => {
   const { season } = useParams();
@@ -16,6 +17,7 @@ const Season: React.FC = () => {
 
   return (
     <Container centerContent>
+      <Seo title={`Episodes | Season ${season}`} />
       <Seasons />
       {loading ? (
         <Loader />
