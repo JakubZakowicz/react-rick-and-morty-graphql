@@ -49,7 +49,7 @@ const Locations: React.FC = () => {
     <Container mt="10">
       <Seo title="Locations" />
       <InputGroup w={{ base: 'auto', lg: '741px' }}>
-        <InputLeftElement zIndex="1">
+        <InputLeftElement>
           <SearchIcon color="gray.300" w="20px" h="20px" ml="4px" mt="5px" />
         </InputLeftElement>
         <Input
