@@ -30,7 +30,7 @@ const Home: React.FC = () => (
       </Text>
       <Button
         as={Link}
-        to="/"
+        to="/characters"
         bg="yellow"
         p="30px 100px"
         fontSize="xl"

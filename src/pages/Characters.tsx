@@ -39,7 +39,7 @@ const Characters: React.FC = () => {
   const handlePageClick = (e: { selected: number }) => {
     const selectedPage = e.selected + 1;
     setPage(selectedPage);
-    navigate(`?page=${selectedPage}`);
+    navigate(`/characters/?page=${selectedPage}`);
   };
 
   return (

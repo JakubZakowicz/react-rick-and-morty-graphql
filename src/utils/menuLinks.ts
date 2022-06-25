@@ -3,7 +3,7 @@ import { MenuLink } from '../types';
 export const menuLinks: Array<MenuLink> = [
   {
     name: 'Characters',
-    to: '/',
+    to: '/characters',
   },
   {
     name: 'Episodes',
