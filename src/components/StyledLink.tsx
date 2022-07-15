@@ -13,9 +13,9 @@ const StyledLink: React.FC<StyledLinkProps> = ({
   <Link
     as={ReactLink}
     to={to}
-    _hover={{ color: isSecondary ? 'white' : 'yellow' }}
+    _hover={{ color: 'white' }}
     fontSize={fontSize}
-    color={`${isSecondary ? 'yellow' : 'white'}`}
+    color="yellow"
   >
     {name}
     {children}

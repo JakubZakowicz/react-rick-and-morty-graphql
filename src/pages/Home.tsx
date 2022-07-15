@@ -2,16 +2,15 @@ import React from 'react';
 import { Box, Button, Flex, Text, Image } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
-import BackgroundImage from "../images/rick_and_morty.webp"
+import BackgroundImage from '../images/rick_and_morty.webp';
 
 const Home: React.FC = () => (
-  <Box>
+  <Box overflow="hidden">
     <Seo title="Home Page" />
-    <Box position="absolute" top="0" filter="auto" brightness="40%" >
+    <Box position="absolute" top="0" w="100%" h="100%" filter="auto" brightness="40%" overflow="hidden">
       <Image
         src={BackgroundImage}
-        w={1848}
-        h={948}
+        minH="1080px"
         objectFit="cover"
         alt="Rick and Morty background"
       />
